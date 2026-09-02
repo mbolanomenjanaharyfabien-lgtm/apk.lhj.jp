@@ -128,7 +128,29 @@ nav li a:hover, .header_resposive li a:hover {
 .mode:hover, .taille_text:hover, .color_text:hover, .color_backgroud:hover {
     transform: translateY(-5px);
 }
+.mode-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: wheat;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
+.mode-icon:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.mode-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: wheat;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mode-icon:hover {
+    transform: scale(1.1);
+    color: white;
+}
 .taille1, .taille2, .taille3, .taille4 {
     cursor: pointer;
     margin: 0.5rem 0;
@@ -191,6 +213,203 @@ nav li a:hover, .header_resposive li a:hover {
 .color_typeR:hover, .color_typeN:hover, .color_typeB:hover, .color_typeV:hover {
     transform: scale(1.1);
     border-color: white;
+}
+
+
+/* //contacte */
+.contact-page {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: wheat;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(245, 222, 179, 0.2);
+    padding-bottom: 0.8rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: wheat;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, rgb(40, 38, 38), rgb(30, 28, 28));
+    color: wheat;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: wheat;
+    box-shadow: 0 0 8px rgba(245, 222, 179, 0.3);
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: none;
+    background: wheat;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.submit-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* apropos */
+
+.about-page {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.about-section.reverse {
+    direction: rtl;
+}
+
+.about-section.reverse > * {
+    direction: ltr;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: wheat;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(245, 222, 179, 0.2);
+    padding-bottom: 0.8rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        display: none;
+    }
+    
+    .manu_bar {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .logo {
+        display: block;
+    }
+
+    .about-section, .about-section.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+    
+    .about-image img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
