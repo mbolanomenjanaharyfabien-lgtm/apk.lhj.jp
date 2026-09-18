@@ -203,6 +203,7 @@ nav li a:hover, .header_resposive li a:hover {
 /* etapes */
 .etapes_14 { 
     width: 100%;
+    padding-bottom: 2rem;
 } 
 .etapes_titre{
     text-align: center;
@@ -570,7 +571,8 @@ footer {
         grid-template-columns: repeat(2, 1fr); 
     } 
     .presentation-cont { 
-        grid-template-columns: 1fr; gap: 40px; 
+        grid-template-columns: 1fr; 
+        gap: 40px; 
     } 
     .presentation-image img { 
         height: 400px; 
@@ -584,25 +586,8 @@ footer {
     .logo { 
         font-size: 18px; 
     } 
-    /* .nav-links { 
-        display: none; 
-        position: absolute; 
-        top: 65px; 
-        left: 0; 
-        width: 100%; 
-        background: white; 
-        flex-direction: column; 
-        gap: 0; 
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        } 
-        .nav-links.active { 
-        display: flex; 
-    } 
-        .nav-links a { 
-        padding: 15px 25px; 
-        border-bottom: 1px solid #eee; 
-    }  */
-        .menu-btn { 
+
+    .menu-btn { 
         display: block; 
     }  
     .btn { 
@@ -648,14 +633,14 @@ footer {
         display: block;
     }
 
-    .about-section, .about-section.reverse {
+    .apropos-section {
         grid-template-columns: 1fr;
         direction: ltr;
         padding: 1.5rem;
         gap: 2rem;
     }
     
-    .about-image img {
+    .apropos-image img {
         height: 220px;
     }
 }
