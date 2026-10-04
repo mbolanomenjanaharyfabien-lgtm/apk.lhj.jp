@@ -13,3 +13,10 @@ function btn_menu(){
         logo_menu.innerHTML = "=";
     }
 }
+
+// function m_sombre(){
+//     alert("bonjour");
+// };
+// function m_claire(){
+//     document.style.body.backgroundColor =
+// };
