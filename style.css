@@ -222,6 +222,15 @@ nav li a:hover, .header_resposive li a:hover {
 .s_titre{
     font-weight: bold;
 }
+.station_son { 
+    background: rgb(28, 27, 27); 
+    padding: 30px 20px; 
+    text-align: left; 
+    border-radius: 8px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); 
+    transition: 0.3s; 
+    cursor: pointer;
+} 
 .station { 
     background: rgb(28, 27, 27); 
     padding: 30px 20px; 
@@ -557,6 +566,16 @@ footer {
     .stations-grid { 
     grid-template-columns: repeat(3, 8rem);
     
+    }
+    .station_son{
+        background: rgb(28, 27, 27); 
+        padding: 30px 20px; 
+        text-align: left; 
+        border-radius: 8px; 
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); 
+        transition: 0.3s; 
+        cursor: pointer;
+        height: 5rem;
     }
     .station { 
     background: rgb(28, 27, 27); 
