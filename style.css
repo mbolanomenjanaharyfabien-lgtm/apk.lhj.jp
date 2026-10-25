@@ -564,7 +564,7 @@ footer {
     font-size: 25px; 
     } 
     .stations-grid { 
-    grid-template-columns: repeat(3, 7rem);
+    grid-template-columns: repeat(3, 6rem);
     
     }
     .station_son{
@@ -575,7 +575,7 @@ footer {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); 
         transition: 0.3s; 
         cursor: pointer;
-        height: 5rem;
+        height: 4rem;
     }
     .station { 
     background: rgb(28, 27, 27); 
