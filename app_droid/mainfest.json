@@ -1,0 +1,19 @@
+{
+    "short_name": "MonApp",
+    "name": "Lalany Hazo Fijaliana",
+    "icons": [
+        {
+            "src": "../images/image9.jpg",
+            "type": "image/pjg",
+            "sizes": "192x192"
+        },
+        {
+            "src": "../images/image8.jpg",
+            "type": "image/pjg",
+            "sizes": "512x512"
+        }
+
+    ],
+    "display": "standalone",
+    "orientation": "portrait"
+}

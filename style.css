@@ -216,6 +216,13 @@ nav li a:hover, .header_resposive li a:hover {
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
+}
+.stations-grid_son { 
+    max-width: 1100px;
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
 } 
 
 /* etap */
@@ -255,7 +262,9 @@ nav li a:hover, .header_resposive li a:hover {
 } 
 .retour{
     margin: 3rem auto;
-    grid-template-columns: repeat(1fr);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     text-align: center;
     width: 300px;
     
@@ -302,6 +311,7 @@ footer {
     color: white;
     width: 100%;
     padding: 3rem;
+    margin-top: 3rem;
  } 
  .footer-cont { 
     max-width: 1100px; 
@@ -523,6 +533,13 @@ footer {
 /* Responsive */
 
 @media (max-width: 900px) { 
+    .stations-grid_son { 
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    
+    } 
     .stations-grid { 
         grid-template-columns: repeat(2, 1fr); 
     
@@ -536,7 +553,36 @@ footer {
     } 
 } 
 
+
+
+@media (max-width: 768px) {
+    h1 {
+        display: none;
+    }
+    
+    .manu_bar {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .logo {
+        display: block;
+    }
+    
+    .parametre {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+    
+}
 @media (max-width: 650px) { 
+    #vvk_fr{
+        display: none;
+    }
     .navbar { 
         height: 65px;
         } 
@@ -563,8 +609,12 @@ footer {
     .presentation-text h3 { 
     font-size: 25px; 
     } 
+
     .stations-grid { 
-    grid-template-columns: repeat(3, 6rem);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
     
     }
     .station_son{
@@ -575,28 +625,27 @@ footer {
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); 
         transition: 0.3s; 
         cursor: pointer;
-        height: 4rem;
+        height: 5rem;
     }
     .station { 
-    background: rgb(28, 27, 27); 
-    padding: 2rem 1rem; 
-    text-align: left; 
-    border-radius: 8px; 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); 
-    transition: 0.3s; 
-    cursor: pointer;
-    height: 5rem;
+        background: rgb(28, 27, 27); 
+        padding: 2rem 1rem ; 
+        text-align: left; 
+        border-radius: 8px; 
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06); 
+        transition: 0.3s; 
+        cursor: pointer;
+        height: 4rem;
+        
 }  
     .station-number{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .footer-cont { 
     grid-template-columns: 1fr; 
     gap: 30px; 
     } 
 }
-
-
 @media (max-width: 768px) {
     h1 {
         display: none;
@@ -628,8 +677,22 @@ footer {
 
 
 
+@media (max-width: 425px) {
+    .stations-grid{
+        gap: 5px; 
+        grid-template-columns: repeat(3, 7rem);
+    }
+    
+    
+}
 @media (max-width: 320px) {
-
+    .stations-grid{
+        gap: 5px; 
+        grid-template-columns: repeat(3, 5.4rem);
+    }
+    .stations-grid_son{
+        gap: 5px; 
+    }
 
     .page_titre {
         font-size: 24px;
@@ -640,28 +703,4 @@ footer {
 
 }
 
-@media (max-width: 768px) {
-    h1 {
-        display: none;
-    }
-    
-    .manu_bar {
-        display: block;
-    }
-    
-    nav {
-        display: none;
-    }
-    
-    .logo {
-        display: block;
-    }
-    
-    .parametre {
-        grid-template-columns: 1fr;
-        padding: 1.5rem;
-        margin: 2rem auto;
-    }
-
-}
 
